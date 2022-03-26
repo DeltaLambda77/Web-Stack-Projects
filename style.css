@@ -1,0 +1,13 @@
+.header {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+body {
+    background-color: rgba(147, 153, 147);
+    font-family: "Roboto", sans-serif;
+    color: rgba(112, 204, 102);
+}

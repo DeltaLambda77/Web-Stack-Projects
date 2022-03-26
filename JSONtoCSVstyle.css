@@ -1,0 +1,21 @@
+.header {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+.header {
+    color: rgba(112, 204, 102);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(147, 153, 147);
+}
+
+textarea {
+    height: 40vh;
+    width: 60vw;
+}
