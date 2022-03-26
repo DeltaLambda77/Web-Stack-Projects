@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to CSV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+    <link rel="stylesheet" href="JSONtoCSVstyle.css">
+</head>
+<body>
+    <h1 class="header">JSON to CSV</h1>
+        <hr>
+        <div>
+            <a href="index.html">Homepage</a>
+            <a href="dollarsToCents.html">Dollars To Cents</a>
+        </div>
+        <hr>
+        <div>
+            <textarea id="json" class="text">Enter Your JSON Here</textarea>
+            <br>
+            <input id="quotes" type="checkbox" class="checkbox" checked="true">Wrap values in double quotes</input>
+            <br>
+            <input id="labels" type="checkbox" class="checkbox" checked="true">Include labels in first row</input>
+            <br>
+            <input type="button" id="jsonconverter" class="btn" value="Convert to CSV">
+            <input type="button" id="downloadcsv" class="btn" value="Download CSV">
+            <br>
+            <textarea id="csv" class="text">CSV Output</textarea>
+        </div>
+    <script src="JSONtoCSVapp.js"></script>
+</body>
+</html>
