@@ -1,5 +1,7 @@
-const ChessBoard = document.getElementById(Chessboard);
-const squares = Array.from(document.querySelectorAll(".Board-Space"));
-const width = 8;
+const chessboard = document.getElementById("chessboard");
+const startButton = document.getElementById("start-btn");
+const boardArray = Array.from(chessboard.getElementsByTagName("div"));
 
-console.log(squares);
+function initialState(){
+
+}
