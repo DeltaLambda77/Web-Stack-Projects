@@ -1,0 +1,31 @@
+.header {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+body {
+    background-color: rgba(147, 153, 147);
+    font-family: "Roboto", sans-serif;
+    color: rgba(112, 204, 102);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 1vh;
+}
+
+label {
+    font-family: sans-serif;
+    justify-content: left;
+}
+
+
+
