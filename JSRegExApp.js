@@ -11,3 +11,31 @@ const username = document.getElementById("username");
 const gmail = document.getElementById("gmail");
 const submitButton = document.getElementById("submit-btn");
 
+function passwordCheck(){
+    let userPassword = password.value;
+    let passRegex = /bell/;
+    const passIsCorrect = passRegex.test(userPassword);
+    console.log(passIsCorrect);
+}
+
+function usernameCheck(){
+    let usernameValue = username.value;
+    let usernameRegex = /(\s|\d|\W)/;
+    const usernameIsIncorrect = usernameRegex.test(usernameValue);
+    console.log(usernameIsIncorrect);
+
+}
+
+function gmailcheck(){
+    let userGmail = gmail.value;
+    let gmailRegex = /@gmail.com/;
+    const gmailIsCorrect = gmailRegex.test(userGmail); 
+    console.log(gmailIsCorrect);
+}
+
+
+submitButton.addEventListener('click', function(){
+    passwordCheck();
+    usernameCheck();
+    gmailcheck();
+})
