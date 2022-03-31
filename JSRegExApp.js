@@ -21,6 +21,7 @@ function passwordCheck(){
     }
     else {
         passValidationText.style.visibility = "visible";
+        throw 'Incorrect pass input';
     }
 }
 
@@ -29,9 +30,9 @@ function usernameCheck(){
     let usernameRegex = /(\s|\d|\W)/;
     const usernameIsIncorrect = usernameRegex.test(usernameValue);
     let usernameValidationText = document.getElementById("username-validation-text");
-    console.log(usernameIsIncorrect);
     if (usernameIsIncorrect) {
         usernameValidationText.style.visibility = "visible";
+        throw 'Incorrect username input';
     }
     else {
         usernameValidationText.style.visibility = "hidden";
@@ -49,6 +50,7 @@ function gmailCheck(){
     }
     else {
         gmailValidationText.style.visibility = "visible";
+        throw 'Incorrect email input';
     }
 }
 
