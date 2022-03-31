@@ -18,8 +18,10 @@ form {
     align-items: center;
 }
 
-input {
+span {
     margin-bottom: 1vh;
+    font-size: 8pt;
+    color: rgba(209, 0, 0);
 }
 
 label {
