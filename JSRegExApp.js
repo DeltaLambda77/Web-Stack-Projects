@@ -13,7 +13,7 @@ const submitButton = document.getElementById("submit-btn");
 
 function passwordCheck(){
     let userPassword = password.value;
-    let passRegex = /bell/;
+    let passRegex = /^(?=.*([A-Z].*){5})(?=.*([^\w\s-].*){6})(?=.*-.*-.*).{13}$/;
     const passIsCorrect = passRegex.test(userPassword);
     console.log(passIsCorrect);
 }
@@ -26,7 +26,7 @@ function usernameCheck(){
 
 }
 
-function gmailcheck(){
+function gmailCheck(){
     let userGmail = gmail.value;
     let gmailRegex = /@gmail.com/;
     const gmailIsCorrect = gmailRegex.test(userGmail); 
@@ -37,5 +37,5 @@ function gmailcheck(){
 submitButton.addEventListener('click', function(){
     passwordCheck();
     usernameCheck();
-    gmailcheck();
+    gmailCheck();
 })
