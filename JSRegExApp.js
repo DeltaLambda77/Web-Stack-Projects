@@ -15,14 +15,27 @@ function passwordCheck(){
     let userPassword = password.value;
     let passRegex = /^(?=.*([A-Z].*){5})(?=.*([^\w\s-].*){6})(?=.*-.*-.*).{13}$/;
     const passIsCorrect = passRegex.test(userPassword);
-    console.log(passIsCorrect);
+    let passValidationText = document.getElementById("pass-validation-text");
+    if (passIsCorrect) {
+        passValidationText.style.visibility = "hidden";
+    }
+    else {
+        passValidationText.style.visibility = "visible";
+    }
 }
 
 function usernameCheck(){
     let usernameValue = username.value;
     let usernameRegex = /(\s|\d|\W)/;
     const usernameIsIncorrect = usernameRegex.test(usernameValue);
+    let usernameValidationText = document.getElementById("username-validation-text");
     console.log(usernameIsIncorrect);
+    if (usernameIsIncorrect) {
+        usernameValidationText.style.visibility = "visible";
+    }
+    else {
+        usernameValidationText.style.visibility = "hidden";
+    }
 
 }
 
@@ -30,7 +43,13 @@ function gmailCheck(){
     let userGmail = gmail.value;
     let gmailRegex = /@gmail.com/;
     const gmailIsCorrect = gmailRegex.test(userGmail); 
-    console.log(gmailIsCorrect);
+    let gmailValidationText = document.getElementById("gmail-validation-text");
+    if (gmailIsCorrect) {
+        gmailValidationText.style.visibility = "hidden";
+    }
+    else {
+        gmailValidationText.style.visibility = "visible";
+    }
 }
 
 
