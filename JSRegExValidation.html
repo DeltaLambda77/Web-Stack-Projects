@@ -22,11 +22,17 @@
         <form action="" onsubmit="validate()">
             <label>Password</label>
             <input type="text" id="password">
-            <span data-validation-text>Msfsfsfsfs</span>
+            <span id="pass-validation-text">*Must enter 5 capital letters,
+                6 symbols, and 2 hyphens in any order</span>
+
             <label>Username</label>
             <input type="text" id="username">
+            <span id="username-validation-text">*Must enter letters without spaces</span>
+
             <label>Gmail Address</label>
             <input type="text" id="gmail">
+            <span id="gmail-validation-text">*Must be a valid gmail address</span>
+
             <button type="button" id="submit-btn">Submit</button>
         </form>
     <script src="JSRegExApp.js"></script>
